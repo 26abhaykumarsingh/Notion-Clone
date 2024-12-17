@@ -6,6 +6,7 @@ import {
   UserButton,
 } from "@clerk/clerk-react";
 import { useUser } from "@clerk/nextjs";
+import Breadcrumbs from "./Breadcrumbs";
 
 // Every component in Next.js is a Server component by default
 
@@ -21,6 +22,7 @@ function Header() {
       )}
 
       {/* Breadcrumbs */}
+      <Breadcrumbs />
 
       <div>
         <SignedOut>
